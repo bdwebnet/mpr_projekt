@@ -9,6 +9,15 @@
 - [ ] Sind sinnvolle Beziehungen zwischen Bild und Text vorhanden?
 - [ ] Wird das Thema gestalterisch passend aufgearbeitet?
 
+### Typografie
+
+- Passen die gewählten Schriften zur Zielgruppe, Inhalt und zur Gestaltung?
+- Ist die Schrift (Lautschrift) angemessen und lesbar?
+- Werden Schriftarten und -größen nicht zu sehr gemischt?
+  - Maximal drei Schriftgrößen
+  - Zwei Schriftarten
+  - Schriftschnitte semantisch passen eingesetzt
+
 ### HTML
 
 - Die Website ist mit semantisch korrektem HTM ausgezeichnet.
