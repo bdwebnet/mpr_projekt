@@ -1,0 +1,104 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* Gestaltung der Navigationsleiste */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .page-title {
+  user-select: none;
+  color: var(--white);
+  font-family: "UnifrakturMaguntia", sans-serif;
+}
+
+header nav .menu-toggle {
+  /* Input-Checkbox soll nicht angezeigt werden */
+  display: none;
+}
+
+header nav .menu-toggle-icon {
+  /* Toggle-Icon soll Hand-Mauszeiger haben */
+  cursor: pointer;
+}
+
+header nav .menu-toggle-icon .close-menu-icon {
+  /* Menü ist eingeklappt */
+  display: none;
+}
+
+header nav .menu-toggle:checked ~ .menu-toggle-icon .open-menu-icon {
+  /* Menü ist ausgeklappt */
+  display: none;
+}
+
+header nav .menu-toggle:checked ~ .menu-toggle-icon .close-menu-icon {
+  /* Menü ist ausgeklappt */
+  display: inline-block;
+}
+
+header nav .menu {
+  /* Menü ist eingeklappt */
+  display: none;
+
+  /* Allgemeiner Menü-Stil */
+  list-style-type: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background-color: var(--primary);
+  text-align: center;
+  z-index: 1000;
+
+}
+
+header nav .menu-toggle:checked ~ ul {
+  /* Menü ist ausgeklappt */
+  display: block;
+
+}
+
+header nav .menu li:hover {
+  border-radius: var(--border-radius);
+  background-color: var(--primary-hover);
+}
+
+header nav .menu li a {
+  padding: var(--space);
+  color: var(--white);
+  display: block;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 992px) {
+  /* Ca. ab Tablets wird die Menü-Leiste durchgehend angezeigt (muss nicht extra ausgeklappt werden) */
+  header nav .menu-toggle-icon {
+    display: none;
+  }
+
+  header nav .menu {
+    display: flex;
+    position: static;
+  }
+
+  header nav .menu li {
+    margin-left: var(--space);
+  }
+
+  header nav .menu li a {
+    margin: 0;
+  }
+}

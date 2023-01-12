@@ -1,0 +1,18 @@
+:root {
+  --primary: #b5bc79;
+  --primary-hover: #919856;
+
+  --dark: #1a1a1a;
+
+  --text: var(--dark);
+
+  --light: #f0f0f4;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --border-radius: 0.5rem;
+  --space: 0.5rem;
+  --space-lg: 1rem;
+  --space-xl: 2rem;
+}

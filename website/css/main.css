@@ -1,0 +1,131 @@
+@import "var.css";
+@import "fonts.css";
+
+@import "header.css";
+@import "footer.css";
+@import "hero-section.css";
+
+body {
+  background-color: var(--white);
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space);
+  padding-right: var(--space);
+  box-sizing: border-box;
+}
+
+.pt {
+  padding-top: var(--space);
+}
+
+.pb {
+  padding-bottom: var(--space);
+}
+
+.py {
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+}
+
+.py-lg {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.my-xl {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.mb-xl {
+  margin-bottom: var(--space-xl);
+}
+
+.pl {
+  padding-left: var(--space);
+}
+
+.pr {
+  padding-right: var(--space);
+}
+
+.px {
+  padding-left: var(--space);
+  padding-right: var(--space);
+}
+
+.divider, .img-divider {
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.divider {
+  height: 5rem;
+}
+
+.img-divider {
+  height: 10rem;
+}
+
+.img-divider img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 992px) {
+  .divider {
+    height: 10rem;
+  }
+
+  .img-divider {
+    height: 15rem;
+  }
+}
+
+button, .btn {
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-hover);
+}
+

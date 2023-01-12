@@ -2,27 +2,138 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Schottland</title>
+    <meta content="width=device-width, initial-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Straßenbahn Esslingen-Nellingen-Denkendorf</title>
+
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <!-- Hier kommt später ein Logo oder ein Header-Bild rein -->
+<header class="bg-primary text-white">
+    <div class="container py">
+        <nav class="py">
+            <a class="page-title" href="#top"> Straßenbahn Esslingen-Nellingen-Denkendorf </a>
+
+            <input class="menu-toggle" id="menuToggle" type="checkbox">
+
+            <label class="menu-toggle-icon" for="menuToggle">
+                <svg class="open-menu-icon" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                          fill-rule="evenodd" />
+                </svg>
+
+                <svg class="close-menu-icon" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+            </label>
+
+            <ul class="menu">
+                <li><a href="#allgemein">Allgemeines</a></li>
+                <li><a href="#strecke">Streckenverlauf</a></li>
+                <li><a href="#depot">Das Depot</a></li>
+            </ul>
+
+        </nav>
+    </div>
 </header>
 
 <main>
-    <!-- Inhalt -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-heading mb-xl">Straßenbahn <br> Esslingen-Nellingen-Denkendorf</h1>
+            <a class="btn" href="#allgemein"> Mehr erfahren </a>
+        </div>
+        <img alt="" class="hero-image"
+             src="https://dalgeo.de/img?src=END/0001_esslingen-bahnhof.jpg">
+    </section>
+
+    <section class="my-xl container" id="allgemein">
+        <h2>Allgemeines über die Straßenbahn</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore ipsa libero molestiae officia
+           reiciendis sunt ullam voluptates? Aliquam autem debitis ducimus est impedit labore necessitatibus quo, ullam
+           voluptates voluptatibus!</p>
+        <p>Alias animi, consequuntur cumque distinctio dolorum est eum fugiat ipsa nesciunt nihil nulla omnis optio
+           perspiciatis placeat porro possimus quam quasi quis quos recusandae sapiente suscipit tempora totam vel
+           voluptatum.</p>
+        <p>Aperiam assumenda doloribus fugit incidunt ipsa ipsum iusto necessitatibus non quibusdam quo! Alias autem
+           commodi consequatur consequuntur debitis dolorem labore, optio placeat possimus praesentium quo repudiandae
+           unde ut voluptatem voluptatum.</p>
+        <p>Debitis enim iure magnam nisi quibusdam reiciendis tenetur vitae. Consequuntur, nemo, possimus. Amet,
+           cupiditate deleniti enim expedita omnis recusandae? Aperiam cupiditate delectus deleniti dicta et minus
+           mollitia sed unde voluptas?</p>
+        <p>A consequuntur debitis delectus dicta, dolores eligendi eos facilis illum incidunt itaque iure labore
+           molestiae, natus nulla odio praesentium quae quam quibusdam quisquam ratione repellendus sapiente suscipit
+           tenetur, totam voluptatibus.</p>
+    </section>
+
+    <div class="img-divider">
+        <img alt="" src="https://dalgeo.de/img?src=END/0014_scharnhausen-bruecke.jpg">
+    </div>
+
+    <section class="my-xl container" id="strecke">
+        <h2>Streckenverlauf der Straßenbahn</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore ipsa libero molestiae officia
+           reiciendis sunt ullam voluptates? Aliquam autem debitis ducimus est impedit labore necessitatibus quo, ullam
+           voluptates voluptatibus!</p>
+        <p>Alias animi, consequuntur cumque distinctio dolorum est eum fugiat ipsa nesciunt nihil nulla omnis optio
+           perspiciatis placeat porro possimus quam quasi quis quos recusandae sapiente suscipit tempora totam vel
+           voluptatum.</p>
+        <p>Aperiam assumenda doloribus fugit incidunt ipsa ipsum iusto necessitatibus non quibusdam quo! Alias autem
+           commodi consequatur consequuntur debitis dolorem labore, optio placeat possimus praesentium quo repudiandae
+           unde ut voluptatem voluptatum.</p>
+        <p>Debitis enim iure magnam nisi quibusdam reiciendis tenetur vitae. Consequuntur, nemo, possimus. Amet,
+           cupiditate deleniti enim expedita omnis recusandae? Aperiam cupiditate delectus deleniti dicta et minus
+           mollitia sed unde voluptas?</p>
+        <p>A consequuntur debitis delectus dicta, dolores eligendi eos facilis illum incidunt itaque iure labore
+           molestiae, natus nulla odio praesentium quae quam quibusdam quisquam ratione repellendus sapiente suscipit
+           tenetur, totam voluptatibus.</p>
+    </section>
+
+    <div class="img-divider">
+        <img alt="" src="https://dalgeo.de/img?src=END/0000_depot2.jpg">
+    </div>
+
+    <section class="my-xl container" id="depot">
+        <h2>Das Depot der Straßenbahn</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore ipsa libero molestiae officia
+           reiciendis sunt ullam voluptates? Aliquam autem debitis ducimus est impedit labore necessitatibus quo, ullam
+           voluptates voluptatibus!</p>
+        <p>Alias animi, consequuntur cumque distinctio dolorum est eum fugiat ipsa nesciunt nihil nulla omnis optio
+           perspiciatis placeat porro possimus quam quasi quis quos recusandae sapiente suscipit tempora totam vel
+           voluptatum.</p>
+        <p>Aperiam assumenda doloribus fugit incidunt ipsa ipsum iusto necessitatibus non quibusdam quo! Alias autem
+           commodi consequatur consequuntur debitis dolorem labore, optio placeat possimus praesentium quo repudiandae
+           unde ut voluptatem voluptatum.</p>
+        <p>Debitis enim iure magnam nisi quibusdam reiciendis tenetur vitae. Consequuntur, nemo, possimus. Amet,
+           cupiditate deleniti enim expedita omnis recusandae? Aperiam cupiditate delectus deleniti dicta et minus
+           mollitia sed unde voluptas?</p>
+        <p>A consequuntur debitis delectus dicta, dolores eligendi eos facilis illum incidunt itaque iure labore
+           molestiae, natus nulla odio praesentium quae quam quibusdam quisquam ratione repellendus sapiente suscipit
+           tenetur, totam voluptatibus.</p>
+    </section>
 </main>
 
-<!-- <aside>
-    Funfacts, Kurzinfos
-</aside> -->
+<footer class="bg-dark text-white">
+    <div class="container py-lg">
+        <div class="footer-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="https://datenschutz-generator.de/impressum/" target="_blank">Impressum</a></li>
+                    <li><a href="https://datenschutz-generator.de/" target="_blank">Datenschutzerklärung</a></li>
+                </ul>
+            </nav>
 
-<footer>
-    <!-- Weitere Navigation, Social Media, Kontaktdaten -->
+            <div class="copyright">
+                <p>&copy; <a href="https://github.com/bdwebnet/" target="_blank">BD</a> 2023</p>
+                <p>mit Bildern von <a href="https://www.drehscheibe-online.de/foren/read.php?99,4756880#forumlist"
+                                      target="_blank">Andreas Illgen</a></p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
