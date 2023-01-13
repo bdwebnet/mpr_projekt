@@ -20,6 +20,7 @@ header nav .page-title {
   user-select: none;
   color: var(--white);
   font-family: "UnifrakturMaguntia", sans-serif;
+  z-index: 999;
 }
 
 header nav .menu-toggle {
@@ -30,6 +31,7 @@ header nav .menu-toggle {
 header nav .menu-toggle-icon {
   /* Toggle-Icon soll Hand-Mauszeiger haben */
   cursor: pointer;
+  z-index: 999;
 }
 
 header nav .menu-toggle-icon .close-menu-icon {
@@ -54,21 +56,21 @@ header nav .menu {
   /* Allgemeiner Menü-Stil */
   list-style-type: none;
   margin: 0 0 0 auto;
-  padding: 0;
+  padding: 2rem 0 0 0;
   position: absolute;
   top: 40px;
   left: 0;
   right: 0;
   background-color: var(--primary);
   text-align: center;
-  z-index: 1000;
-
+  z-index: 998;
 }
 
 header nav .menu-toggle:checked ~ ul {
   /* Menü ist ausgeklappt */
   display: block;
-
+  animation-name: fadeInTop;
+  animation-duration: 0.5s;
 }
 
 header nav .menu li:hover {
@@ -100,5 +102,16 @@ header nav .menu li a {
 
   header nav .menu li a {
     margin: 0;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
