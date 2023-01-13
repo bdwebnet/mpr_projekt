@@ -66,7 +66,7 @@ header nav .menu {
   z-index: 998;
 }
 
-header nav .menu-toggle:checked ~ ul {
+header nav .menu-toggle:checked ~ .menu {
   /* Menü ist ausgeklappt */
   display: block;
   animation-name: fadeInTop;
@@ -78,11 +78,14 @@ header nav .menu li:hover {
   background-color: var(--primary-hover);
 }
 
+header nav .menu li {
+  margin: var(--space);
+}
+
 header nav .menu li a {
   padding: var(--space);
   color: var(--white);
   display: block;
-  margin: 5px 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -91,17 +94,24 @@ header nav .menu li a {
     display: none;
   }
 
+  header nav .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
   header nav .menu {
     display: flex;
     position: static;
+    flex-direction: row;
+    padding: 0;
   }
 
   header nav .menu li {
-    margin-left: var(--space);
+    margin: 0 0 0 var(--space);
   }
 
   header nav .menu li a {
     margin: 0;
+    padding: var(--space) var(--space-lg);
   }
 }
 
