@@ -15,4 +15,6 @@
   --space: 0.5rem;
   --space-lg: 1rem;
   --space-xl: 2rem;
+
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }

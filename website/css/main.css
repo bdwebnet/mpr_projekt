@@ -1,9 +1,16 @@
 @import "var.css";
 @import "fonts.css";
+@import "grid.css";
 
 @import "header.css";
 @import "footer.css";
 @import "hero-section.css";
+@import "streckenverlauf.css";
+
+*, html, body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
 
 body {
   background-color: var(--white);
@@ -127,5 +134,17 @@ button, .btn {
 
 button:hover, .btn:hover {
   background-color: var(--primary-hover);
+}
+
+#depot .depot-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#depot img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 100%;
 }
 
