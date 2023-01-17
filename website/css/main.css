@@ -1,3 +1,7 @@
+/*
+Haupt-CSS_Datei (wird in HTML importiert)
+ */
+
 @import "var.css";
 @import "fonts.css";
 @import "grid.css";
@@ -6,7 +10,9 @@
 @import "footer.css";
 @import "hero-section.css";
 @import "streckenverlauf.css";
+@import "divider.css";
 
+/* Schönes On-Page-Scrolling bei #-Links */
 *, html, body {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
@@ -17,7 +23,6 @@ body {
   color: var(--text);
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -47,6 +52,12 @@ body {
   padding-left: var(--space);
   padding-right: var(--space);
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .pt {
@@ -89,42 +100,6 @@ body {
   padding-right: var(--space);
 }
 
-.divider, .img-divider {
-  background-color: var(--primary);
-  position: relative;
-  overflow: hidden;
-}
-
-.divider {
-  height: 5rem;
-}
-
-.img-divider {
-  height: 10rem;
-}
-
-.img-divider img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media screen and (min-width: 992px) {
-  .divider {
-    height: 10rem;
-  }
-
-  .img-divider {
-    height: 15rem;
-  }
-
-  .container {
-    max-width: 1280px;
-  }
-}
-
 button, .btn {
   border: none;
   background-color: var(--primary);
@@ -140,6 +115,7 @@ button:hover, .btn:hover {
   background-color: var(--primary-hover);
 }
 
+/* Style des letzten Abschnitts */
 #depot .depot-content {
   display: flex;
   flex-direction: column;

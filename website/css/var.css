@@ -1,3 +1,7 @@
+/*
+CSS-Datei mit Variablen für die Einheitlichkeit
+ */
+
 :root {
   --primary: #b5bc79;
   --primary-hover: #919856;

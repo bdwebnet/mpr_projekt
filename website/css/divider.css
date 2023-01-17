@@ -1,0 +1,39 @@
+/*
+CSS-Datei für den Sektions-Trenner
+ */
+
+.divider, .img-divider {
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.divider {
+  height: 5rem;
+}
+
+.img-divider {
+  height: 10rem;
+}
+
+.img-divider img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 992px) {
+  .divider {
+    height: 10rem;
+  }
+
+  .img-divider {
+    height: 15rem;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+}

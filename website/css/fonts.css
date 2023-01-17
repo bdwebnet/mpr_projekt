@@ -1,11 +1,16 @@
-/* Für allgemeine Texte */
+/*
+CSS-Datei für Schrift-Einstellungen
+ */
+
+/* Schriftart für allgemeine Texte */
 @import "fonts/roboto-v30-latin.css";
 
-/* Für Überschriften, "Logo" */
+/* Schriftart für Überschriften, "Logo" */
 @import "fonts/unifrakturmaguntia-v16-latin.css";
 
 body {
   font-size: 1.15rem;
+  font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

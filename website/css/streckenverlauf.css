@@ -1,3 +1,8 @@
+/*
+CSS-Datei für die Streckenverlauf-"Timeline"
+ */
+
+/* Handys */
 @media screen and (max-width: 991px) {
   .streckenverlauf {
     position: relative;
@@ -47,6 +52,7 @@
   }
 }
 
+/* Tablets und Desktops */
 @media screen and (min-width: 992px) {
   .streckenverlauf {
     position: relative;

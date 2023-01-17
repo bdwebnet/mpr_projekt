@@ -1,9 +1,15 @@
+/*
+CSS-Datei für den Header
+ */
+
+/* Header oben fixiert */
 header {
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
+/* Keine unterstrichenen Links */
 header a {
   text-decoration: none;
 }
@@ -69,11 +75,13 @@ header nav .menu {
 header nav .menu-toggle:checked ~ .menu {
   /* Menü ist ausgeklappt */
   display: block;
+  /* Animation beim einblenden */
   animation-name: fadeInTop;
   animation-duration: 0.5s;
 }
 
 header nav .menu li:hover {
+  /* Einzelnes Nav-Element bei Mauskontakt */
   border-radius: var(--border-radius);
   background-color: var(--primary-hover);
 }
@@ -94,6 +102,7 @@ header nav .menu li a {
     display: none;
   }
 
+  /* Weitere Anpassungen für die Desktop-Navigation */
   header nav .menu-toggle:checked ~ .menu {
     display: flex;
   }
@@ -115,6 +124,7 @@ header nav .menu li a {
   }
 }
 
+/* Einblend-Animation von oben nach unten */
 @keyframes fadeInTop {
   0% {
     opacity: 0;

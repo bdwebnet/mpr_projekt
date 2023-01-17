@@ -1,3 +1,7 @@
+/*
+CSS-Datei für das Grid-Layout
+ */
+
 .grid {
   display: grid;
   gap: var(--space-xl);
