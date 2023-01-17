@@ -41,7 +41,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 576px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--space);
@@ -118,6 +118,10 @@ body {
 
   .img-divider {
     height: 15rem;
+  }
+
+  .container {
+    max-width: 1280px;
   }
 }
 

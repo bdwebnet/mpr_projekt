@@ -24,7 +24,7 @@ footer {
 
 .footer-wrapper a {
   text-decoration: underline;
-  text-underline-offset: var(--space);
+  text-underline-offset: 0.3rem;
   color: var(--white);
 }
 
