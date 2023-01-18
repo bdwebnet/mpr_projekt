@@ -11,6 +11,7 @@ Haupt-CSS_Datei (wird in HTML importiert)
 @import "hero-section.css";
 @import "streckenverlauf.css";
 @import "divider.css";
+@import "animation.css";
 
 /* Schönes On-Page-Scrolling bei #-Links */
 *, html, body {

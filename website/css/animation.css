@@ -1,0 +1,50 @@
+/*
+CSS for Animations
+ */
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in 0.8s ease-in-out;
+}
+
+.fade-in-left {
+  animation: fade-in-left 0.8s ease-in-out;
+}
+
+.fade-in-right {
+  animation: fade-in-right 0.8s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

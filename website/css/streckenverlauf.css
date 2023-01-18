@@ -67,6 +67,13 @@ CSS-Datei für die Streckenverlauf-"Timeline"
     float: left;
     padding: var(--space-lg) 0;
     margin-top: -15%;
+    transition: all 0.2s ease-in-out;
+    z-index: 5;
+
+  }
+
+  .streckenverlauf .item:hover {
+    transform: scale(103%);
   }
 
   .streckenverlauf .item h4 {
